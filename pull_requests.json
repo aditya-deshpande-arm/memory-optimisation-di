@@ -1,0 +1,170 @@
+[
+    {
+        "Bytes saved": "2384",
+        "main PR": "#2891",
+        "group": "config.h",
+        "short description": "crypto: aes: option for encrypt only"
+    },
+    {
+        "Bytes saved": "1438",
+        "main PR": "r601",
+        "group": "config.h",
+        "short description": "ssl: session resumption"
+    },
+    {
+        "Bytes saved": "1246",
+        "main PR": "r606",
+        "group": "ssl-conf",
+        "short description": "ciphersuite"
+    },
+    {
+        "Bytes saved": "1192",
+        "main PR": "r585",
+        "group": "config.h",
+        "short description": "ssl: DTLS-only builds"
+    },
+    {
+        "Bytes saved": "712",
+        "main PR": "r593",
+        "group": "ssl-conf",
+        "short description": "version range"
+    },
+    {
+        "Bytes saved": "696",
+        "main PR": "r652",
+        "group": "MAYBE-x509",
+        "short description": "single translation unit"
+    },
+    {
+        "Bytes saved": "652",
+        "main PR": "r642",
+        "group": "config.h",
+        "short description": "x509/ssl: hostname verification"
+    },
+    {
+        "Bytes saved": "528",
+        "main PR": "r594",
+        "group": "ssl-conf",
+        "short description": "various options"
+    },
+    {
+        "Bytes saved": "485",
+        "main PR": "r654",
+        "group": "MAYBE-layers",
+        "short description": "MD layer"
+    },
+    {
+        "Bytes saved": "476",
+        "main PR": "#2835",
+        "group": "MAYBE-layers",
+        "short description": "PK layer"
+    },
+    {
+        "Bytes saved": "440",
+        "main PR": "r605",
+        "group": "x509 misc",
+        "short description": "rm struct fields unused depending on config.h"
+    },
+    {
+        "Bytes saved": "344",
+        "main PR": "r649",
+        "group": "misc mixed",
+        "short description": "optimize structures"
+    },
+    {
+        "Bytes saved": "308",
+        "main PR": "r586",
+        "group": "ssl misc",
+        "short description": "remember peer CRT only if renego enabled"
+    },
+    {
+        "Bytes saved": "294",
+        "main PR": "r657",
+        "group": "misc mixed",
+        "short description": "use shared functions for char/uint conversions"
+    },
+    {
+        "Bytes saved": "268",
+        "main PR": "r602",
+        "group": "ssl-conf",
+        "short description": "elliptic curve"
+    },
+    {
+        "Bytes saved": "268",
+        "main PR": "#2890",
+        "group": "config.h",
+        "short description": "crypto: aes: option for 128-bit keys only"
+    },
+    {
+        "Bytes saved": "220",
+        "main PR": "r609",
+        "group": "config.h",
+        "short description": "x509/ssl: verification callbacks"
+    },
+    {
+        "Bytes saved": "188",
+        "main PR": "r621",
+        "group": "config.h",
+        "short description": "~crypto: SHA-256 without SHA-224~ #6784"
+    },
+    {
+        "Bytes saved": "184",
+        "main PR": "r596",
+        "group": "ssl-conf",
+        "short description": "callbacks (RNG, IO, timer)"
+    },
+    {
+        "Bytes saved": "178",
+        "main PR": "r604",
+        "group": "ssl-conf",
+        "short description": "signature hash"
+    },
+    {
+        "Bytes saved": "148",
+        "main PR": "r610",
+        "group": "ssl misc",
+        "short description": "delay sending alerts"
+    },
+    {
+        "Bytes saved": "126",
+        "main PR": "r592",
+        "group": "ssl-conf",
+        "short description": "groundwork: hardcode use of EMS extension"
+    },
+    {
+        "Bytes saved": "108",
+        "main PR": "r641",
+        "group": "ssl misc",
+        "short description": "rm `ssl_calc_xxx` function pointers"
+    },
+    {
+        "Bytes saved": "88",
+        "main PR": "r589",
+        "group": "x509 misc",
+        "short description": "rm time code if !TIME_DATE"
+    },
+    {
+        "Bytes saved": "76",
+        "main PR": "r599",
+        "group": "ssl-conf",
+        "short description": "prep: save dynamic alloc of supported curves"
+    },
+    {
+        "Bytes saved": "68",
+        "main PR": "r635",
+        "group": "ssl misc",
+        "short description": "adapt version encoding in DTLS-only builds"
+    },
+    {
+        "Bytes saved": "24",
+        "main PR": "r612",
+        "group": "ssl misc",
+        "short description": "rm compression field if disabled"
+    },
+    {
+        "Bytes saved": "20",
+        "main PR": "r633",
+        "group": "ssl misc",
+        "short description": "rm minlen from transform structure"
+    }
+]
