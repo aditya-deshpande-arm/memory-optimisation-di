@@ -258,6 +258,17 @@ class PullRequestGetter:
             spacing = ' ' * (30- len(text))
             print(f'{text}{spacing}{pr.score}')
 
+    def generate_report(self):
+        all_pulls = (self.mbedtls_pulls + self.restricted_pulls)
+        sorted_pulls = sorted(all_pulls, key=lambda x: x.score, reverse=True)
+        table_format = '{:<25} {:<7} {:<20} {:<20} {:<10} {:<27} {:<10}'
+        print(table_format.format('PR','Commits','Lines vs Base', 'Lines vs Dev', 'Files', 'Bytes Saved', 'SCORE'))
+        for pr in sorted_pulls:
+            pr_text = f'{pr.repo_name}/{pr.number}:'
+            bytes_text = f'(Text: {pr.bytes_saved.text}, Data: {pr.bytes_saved.data})'
+            score = str(round(pr.score,2))
+            print(table_format.format(pr_text,pr.commits_count,pr.lines_changed,pr.dev_diff,pr.files_count,bytes_text,score))
+
 def calculate_score(norm_metrics):
     # Placeholder: divide bytes saved by the average of the rest of the
     # metrics (equal weighting)
@@ -342,7 +353,7 @@ def main():
     pr_getter = PullRequestGetter(args.pulls_path, args.mbedtls_path, args.restricted_path)
     pr_getter.get_metrics()
     pr_getter.normalise_metrics()
-    pr_getter.print_scores()
+    pr_getter.generate_report()
 
 if __name__ == '__main__':
     main()
